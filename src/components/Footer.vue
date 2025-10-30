@@ -1,5 +1,9 @@
+<script setup>
+import ArrowButton from './Icons/ArrowButton.vue'
+</script>
+
 <template>
-    <footer class="bg-gray-100 py-12 px-9">
+    <footer class="bg-[#F5F4F4] py-12 px-9">
         <div class="text-gray-500 grid grid-cols-2 md:grid-cols-5 gap-6 mb-15">
             <div>
               <h3 class="font-bold mb-2">Account</h3>
@@ -50,12 +54,8 @@
         </div>
 
           <div class="text-sm mt-6 text-gray-500 text-center">
-            <p class="mb-2">Privacy Policy | Terms of Service | Do Not Sell or Share My Personal Info | CS Supply Chain Transparency | Vendor Code of Conduct | Sitemap Pages | Sitemap Products</p>
+            <p class="mb-4">Privacy Policy | Terms of Service | Do Not Sell or Share My Personal Info | CS Supply Chain Transparency | Vendor Code of Conduct | Sitemap Pages | Sitemap Products</p>
             <p>© 2023 All Rights Reserved</p>
           </div>
     </footer>
 </template>
-
-<script setup>
-    import ArrowButton from './ArrowButton.vue'
-</script>

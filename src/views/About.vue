@@ -2,11 +2,12 @@
 import Header from '/src/components/Header.vue'
 import Footer from '/src/components/Footer.vue'
 import InfoSection from '/src/components/InfoSection.vue'
+const images = import.meta.glob('/src/assets/*.png', { eager: true, import: 'default' })
 
 const exploreItems = [
-    {title: 'Our Products', image: '/src/assets/products1.png'},
-    {title: 'Our Stores', image: '/src/assets/stores1.png'},
-    {title: 'Careers', image: '/src/assets/careers1.png'}
+    {title: 'Our Products', image: images['/src/assets/products1.png']},
+    {title: 'Our Stores', image: images['/src/assets/stores1.png']},
+    {title: 'Careers', image: images['/src/assets/careers1.png']}
 ]
 </script>
 

@@ -7,15 +7,16 @@ import SocialMediaIcons from '/src/components/Icons/SocialMediaIcons.vue'
 import Header from '/src/components/Header.vue'
 import Footer from '/src/components/Footer.vue'
 import { blogs } from '/src/data/blogs.js'
-
 const route = useRoute()
 const blog = blogs.find(b => b.id === parseInt(route.params.id))
+const images = import.meta.glob('/src/assets/*.png', { eager: true, import: 'default' })
+
 const winterItems = [
-    {title: 'Appliquéd Flannel Duvet Bedding', price: 49, image: '/src/assets/w1.png'},
-    {title: 'Unique Cushion Covers', price: 25, image: '/src/assets/w2.png'},
-    {title: 'Bathroom Wooden Stool', price: 59, image: '/src/assets/w3.png'},
-    {title: 'Dark Coffee Table', price: 99, image: '/src/assets/w4.png'},
-    {title: 'Extra Fluffy Throw Blanket', price: 39, image: '/src/assets/w5.png'}
+    {title: 'Appliquéd Flannel Duvet Bedding', price: 49, image: images['/src/assets/w1.png']},
+    {title: 'Unique Cushion Covers', price: 25, image: images['/src/assets/w2.png']},
+    {title: 'Bathroom Wooden Stool', price: 59, image: images['/src/assets/w3.png']},
+    {title: 'Dark Coffee Table', price: 99, image: images['/src/assets/w4.png']},
+    {title: 'Extra Fluffy Throw Blanket', price: 39, image: images['/src/assets/w5.png']}
 ]
 </script>
 

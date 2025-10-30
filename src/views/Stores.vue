@@ -1,6 +1,7 @@
 <script setup>
 import Header from '/src/components/Header.vue'
 import Footer from '/src/components/Footer.vue'
+
 const images = import.meta.glob('/src/assets/*.png', { eager: true, import: 'default' })
 const stores = [
     {city: 'SEATTLE', area: 'University Village', image: images['/src/assets/s1.png']},

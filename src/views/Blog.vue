@@ -3,11 +3,12 @@ import { RouterLink } from 'vue-router'
 import Header from '/src/components/Header.vue'
 import Footer from '/src/components/Footer.vue'
 import { blogs } from '/src/data/blogs.js'
+const images = import.meta.glob('/src/assets/*.png', { eager: true, import: 'default' })
 
 const progressList = [
-    {title: 'Carbon Commitment', image: '/src/assets/carboon.png'},
-    {title: 'Environmental Initiatives', image: '/src/assets/enviromental.png'},
-    {title: 'Better Factories', image: '/src/assets/factories.png'}
+    {title: 'Carbon Commitment', image: images['/src/assets/carboon.png']},
+    {title: 'Environmental Initiatives', image: images['/src/assets/enviromental.png']},
+    {title: 'Better Factories', image: images['/src/assets/factories.png']}
 ]
 </script>
 

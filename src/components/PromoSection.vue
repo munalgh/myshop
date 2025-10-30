@@ -1,8 +1,10 @@
 <script setup>
+const images = import.meta.glob('/src/assets/*.png', { eager: true, import: 'default' })
+
 const promoSection = [
-    {title: 'New Arrivals', tag: 'SHOP THE LATEST', image: '/src/assets/new.png'},
-    {title: 'Best-Sellers', tag: 'SHOP YOUR FAVORITES', image: '/src/assets/best.png'},
-    {title: 'The Holiday Season', tag: 'SHOP OCCASION', image: '/src/assets/holiday.png'}
+    {title: 'New Arrivals', tag: 'SHOP THE LATEST', image: images['/src/assets/new.png']},
+    {title: 'Best-Sellers', tag: 'SHOP YOUR FAVORITES', image: images['/src/assets/best.png']},
+    {title: 'The Holiday Season', tag: 'SHOP OCCASION', image: images['/src/assets/holiday.png']}
 ]
 </script>
 

@@ -25,13 +25,15 @@ const toggleSearch = () => {
   showSearch.value = !showSearch.value
 }
 
+const listingImages = import.meta.glob('/src/assets/listing/*.png', { eager: true, import: 'default' })
+
 const dropdowns = {
   listing: {
     highlights: ['Shop All New Arrivals', 'The Gift Guide', 'New Bottoms', 'New Tops', 'T-Shirt Bundles', 'Under $100'],
     featured: ['The Holiday Outfit Edit', 'Giftable Sweaters', 'Uniform & Capsule', 'The Performance Chino Shop', 'Top Rated Men’s Clothing'],
     images: [
-      {src: '/src/assets/listing/w1.png', title: 'The Holiday Outfit Edit'},
-      {src: '/src/assets/listing/w2.png', title: 'Giftable Sweaters'}
+      {src: listingImages['/src/assets/listing/w1.png'], title: 'The Holiday Outfit Edit'},
+      {src: listingImages['/src/assets/listing/w2.png'], title: 'Giftable Sweaters'}
     ]
   }
 }

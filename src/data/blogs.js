@@ -1,9 +1,11 @@
+const images = import.meta.glob('/src/assets/*.png', { eager: true, import: 'default' })
+
 export const blogs = [
   {
     id: 1,
     title: 'How To Style Winter Interior',
     tag: 'Interior',
-    image: '/src/assets/ww1.png',
+    image: images['/src/assets/ww1.png'],
     sections: [
       {
         type: 'heading',
@@ -11,7 +13,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/mug.png',
+        src: images['/src/assets/mug.png'],
       },
       {
         type: 'heading',
@@ -39,7 +41,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/dining.png',
+        src: images['/src/assets/dining.png'],
       },
       {
         type: 'heading',
@@ -63,7 +65,7 @@ export const blogs = [
     id: 2,
     title: 'We Won A Glossy Awards',
     tag: 'Transparency',
-    image: '/src/assets/award.png',
+    image: images['/src/assets/award.png'],
     sections: [
       {
         type: 'heading',
@@ -71,7 +73,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/mug.png',
+        src: images['/src/assets/mug.png'],
       },
       {
         type: 'heading',
@@ -99,7 +101,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/dining.png',
+        src: images['/src/assets/dining.png'],
       },
       {
         type: 'heading',
@@ -123,7 +125,7 @@ export const blogs = [
     id: 3,
     title: 'Coordinate Your Style: Matching Sits for Everyone',
     tag: 'Style',
-    image: '/src/assets/fits.png',
+    image: images['/src/assets/fits.png'],
     sections: [
       {
         type: 'heading',
@@ -131,7 +133,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/mug.png',
+        src: images['/src/assets/mug.png'],
       },
       {
         type: 'heading',
@@ -159,7 +161,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/dining.png',
+        src: images['/src/assets/dining.png'],
       },
       {
         type: 'heading',
@@ -183,7 +185,7 @@ export const blogs = [
     id: 4,
     title: 'Black Friday Fund 2023',
     tag: 'Transparency',
-    image: '/src/assets/blackfriday.png',
+    image: images['/src/assets/blackfriday.png'],
     sections: [
       {
         type: 'heading',
@@ -191,7 +193,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/mug.png',
+        src: images['/src/assets/mug.png'],
       },
       {
         type: 'heading',
@@ -219,7 +221,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/dining.png',
+        src: images['/src/assets/dining.png'],
       },
       {
         type: 'heading',
@@ -243,7 +245,7 @@ export const blogs = [
     id: 5,
     title: 'What to Get this Season: Holiday Interior & Ideas',
     tag: 'Interior',
-    image: '/src/assets/design.png',
+    image: images['/src/assets/design.png'],
     sections: [
       {
         type: 'heading',
@@ -251,7 +253,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/mug.png',
+        src: images['/src/assets/mug.png'],
       },
       {
         type: 'heading',
@@ -279,7 +281,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/dining.png',
+        src: images['/src/assets/dining.png'],
       },
       {
         type: 'heading',
@@ -303,7 +305,7 @@ export const blogs = [
     id: 6,
     title: 'Thanksgiving Gift Design Ideas',
     tag: 'Design',
-    image: '/src/assets/season.png',
+    image: images['/src/assets/season.png'],
     sections: [
       {
         type: 'heading',
@@ -311,7 +313,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/mug.png',
+        src: images['/src/assets/mug.png'],
       },
       {
         type: 'heading',
@@ -339,7 +341,7 @@ export const blogs = [
       },
       {
         type: 'image',
-        src: '/src/assets/dining.png',
+        src: images['/src/assets/dining.png'],
       },
       {
         type: 'heading',

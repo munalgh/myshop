@@ -2,6 +2,8 @@
 import Header from '/src/components/Header.vue'
 import Footer from '/src/components/Footer.vue'
 import InfoSection from '/src/components/InfoSection.vue'
+
+const infoImages = import.meta.glob('/src/assets/info/*.png', { eager: true, import: 'default' })
 const images = import.meta.glob('/src/assets/*.png', { eager: true, import: 'default' })
 
 const exploreItems = [
@@ -32,7 +34,7 @@ const exploreItems = [
         subtitle="OUR FACTORIES"
         title="Our ethical approach."
         description="We spend months finding the best factories around the world—the same ones that produce your favorite designer labels. We visit them often and build strong personal relationships with the owners. Each factory is given a compliance audit to evaluate factors like fair wages, reasonable hours, and environment. Our goal? A score of 90 or above for every factory."
-        image="/src/assets/cotton1.png"
+        image="infoImages['/src/assets/cotton1.png']"
         bgColor="bg-[#f0ebdf]"/>
 
     <div>
@@ -43,7 +45,7 @@ const exploreItems = [
         subtitle="OUR QUALITY"
         title="Designed to last."
         description="At Everlane, we’re not big on trends. We want you to wear our pieces for years, even decades, to come. That’s why we source the finest materials and factories for our timeless products— like our Grade-A cashmere sweaters, Italian shoes, and Peruvian Pima tees."
-        image="/src/assets/sewing1.png"
+        image="infoImages['/src/assets/sewing1.png']"
         bgColor="bg-[#a0ab99]"
         imagePosition="right"/>
 
@@ -55,7 +57,7 @@ const exploreItems = [
         subtitle="OUR PRICES"
         title="Radically Transparent."
         description="We believe our customers have a right to know how much their clothes cost to make. We reveal the true costs behind all of our products—from materials to labor to transportation—then offer them to you, minus the traditional retail markup.."
-        image="/src/assets/graph.png"/>
+        image="infoImages['/src/assets/graph.png']"/>
 
     <section class="m-5 p-5">
         <h1 class="text-center text-3xl font-bold mb-10">More to Explore</h1>
